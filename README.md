@@ -2,7 +2,7 @@
 Modeling of published clinical Probenecid-Furosemide-DDI studies for model evaluation
  
 ### Repository files
-Within this repository, we share a PK-Sim project file containing simulations of all published clinical studies used to evaluate the predictive performance of our models regarding the Probenecid-Furosemide-DDI, including the respective observed data. For further details and documentation please refer to [[1](#reference)].
+Within this repository, we share a PK-Sim project file containing simulations of all published clinical studies used to evaluate the predictive performance of our models regarding the [Probenecid](https://github.com/Open-Systems-Pharmacology/Probenecid-Model)-[Furosemide](https://github.com/Open-Systems-Pharmacology/Furosemide-Model)-DDI, including the respective observed data. For further details and documentation please refer to [[1](#reference)].
  
 ### Version information
 PK-Sim Version 9.0.
