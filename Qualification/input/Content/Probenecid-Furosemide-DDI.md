@@ -1,6 +1,6 @@
 The release of the snapshot containing the respective simulations can be found here: <https://github.com/Open-Systems-Pharmacology/Probenecid-Furosemide-DDI>
 
-Probenecid-furosemide DDI was described by competitive inhibition of OAT3 and MRP4 and non-competitive inhibition of UGT1A9. The DDI evaluation was initially developed and published by [Britz 2020](#5-references) and adjusted later on to PK-Sim V11.
+The Probenecid-furosemide DDI was initially developed and published by [Britz 2020](#5-references) and adjusted later on to PK-Sim V11. This DDI was characterized by competitive inhibition of OAT3 and MRP4 and non-competitive inhibition of UGT1A9. 
 
 The Probenecid / Furosemide interaction was evaluated using 5 clinical DDI studies including 6 different clinical settings ([Homeida 1977](#references), [Smith 1980](#references), [Wiebe 2020](#references), [Shen 2019](#references), [Vree 1995](#references)).
 
