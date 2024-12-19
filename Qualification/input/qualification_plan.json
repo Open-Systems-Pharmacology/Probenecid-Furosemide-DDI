@@ -380,14 +380,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40  mg (bolus)_Homeida 1977_1001",
                                     "StartTime": 72,
-                                    "EndTime": "77",
+                                    "EndTime": 77,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid",
                                     "StartTime": 72,
-                                    "EndTime": "77",
+                                    "EndTime": 77,
                                     "TimeUnit": "h"
                                 }
                             },
@@ -399,14 +399,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40 mg (3 min)_Smith 1980_1002+3002",
                                     "StartTime": 13,
-                                    "EndTime": "18",
+                                    "EndTime": 18,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid",
                                     "StartTime": 13,
-                                    "EndTime": "18",
+                                    "EndTime": 18,
                                     "TimeUnit": "h"
                                 }
                             }                            
@@ -425,14 +425,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean",
                                     "StartTime": 13,
-                                    "EndTime": "37",
+                                    "EndTime": 37,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid",
                                     "StartTime": 13,
-                                    "EndTime": "37",
+                                    "EndTime": 37,
                                     "TimeUnit": "h"
                                 }
                             },
@@ -444,14 +444,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
                                     "StartTime": 13,
-                                    "EndTime": "37",
+                                    "EndTime": 37,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid",
                                     "StartTime": 13,
-                                    "EndTime": "37",
+                                    "EndTime": 37,
                                     "TimeUnit": "h"
                                 }
                             },
@@ -463,14 +463,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40 mg (tab)_Shen 2019_1003",
                                     "StartTime": 0,
-                                    "EndTime": "24",
+                                    "EndTime": 24,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40 mg (tab)_Shen 2019_2003_with probenecid",
                                     "StartTime": 0,
-                                    "EndTime": "24",
+                                    "EndTime": 24,
                                     "TimeUnit": "h"
                                 }
                             },
@@ -482,14 +482,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 80 mg (tab)_Vree 1995_1004+3004",
                                     "StartTime": 1,
-                                    "EndTime": "12",
+                                    "EndTime": 12,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 80 mg (tab)_Vree 1995_2004+4004_with probenecid",
                                     "StartTime": 1,
-                                    "EndTime": "12",
+                                    "EndTime": 12,
                                     "TimeUnit": "h"
                                 }
                             }
