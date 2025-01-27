@@ -3,15 +3,15 @@
     "Projects": [
         {
             "Id": "Probenecid",
-            "Path": "../../Probenecid-Model.json"
+            "Path": "https://raw.githubusercontent.com/ErikssonJ/Probenecid-Model/refs/heads/main/Probenecid-Model.json"
         },
         {
             "Id": "Furosemide",
-            "Path": "../../Furosemide-Model.json"
+            "Path": "https://raw.githubusercontent.com/mgsc1020/Furosemide-Model/refs/heads/main/Furosemide-Model.json"
         },
         {
             "Id": "Probenecid-Furosemide-DDI",
-            "Path": "../../Probenecid-Furosemide-DDI-V11.json",
+            "Path": "https://raw.githubusercontent.com/mgsc1020/Probenecid-Furosemide-DDI/refs/heads/main/Probenecid-Furosemide-DDI.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",

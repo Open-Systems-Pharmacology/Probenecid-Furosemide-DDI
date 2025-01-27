@@ -5,7 +5,7 @@
 
 | Version                         | x.x-OSPy.y                                                   |
 | ------------------------------- | ------------------------------------------------------------ |
-| Qualification Plan Release      | https://github.com/Open-Systems-Pharmacology/Qualification-DDI-OAT/releases/tag/vx.x |
+| Qualification Plan Release      | https://github.com/Open-Systems-Pharmacology/Probenecid-Furosemide-DDI/releases |
 | OSP Version                     | y.y                                                          |
 | Qualification Framework Version | z.z                                                          |
 
