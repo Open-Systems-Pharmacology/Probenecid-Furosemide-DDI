@@ -13123,8 +13123,14 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "iv, 40  mg (bolus)_Homeida 1977_1001|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Homeida 1977 - Furosemide control_Furosemide_40_iv_1001_Plasma"
+        }
       ],
       "Individual": "Homeida 1977, 23 y, male individuum",
       "Compounds": [
@@ -13190,7 +13196,7 @@
               "GridLines": false,
               "Visible": true,
               "Min": 74.0,
-              "Max": 80.0,
+              "Max": 78.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -13204,12 +13210,11 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -13220,17 +13225,6 @@
             }
           ],
           "Curves": [
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "iv, 40  mg (bolus)_Homeida 1977_1001|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 7,
-                "LineStyle": "Dash"
-              }
-            },
             {
               "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
               "X": "Time",
@@ -13270,7 +13264,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\niv, 40  mg (bolus)_Homeida 1977_1001\n2024-12-19 10:40"
+          "OriginText": "Probenecid-Furosemide-DDI\niv, 40  mg (bolus)_Homeida 1977_1001\n2025-02-06 13:19"
         }
       ]
     },
@@ -13541,6 +13535,18 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine"
+        }
+      ],
       "Individual": "Wiebe 2020, male, 34 y, 79 kg, 179 cm, therapeutic dose",
       "Compounds": [
         {
@@ -13610,7 +13616,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "Min": 12.0,
+              "Min": 13.0,
               "Max": 50.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
@@ -13618,14 +13624,16 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "µg/ml",
+              "Unit": "nmol/l",
               "Dimension": "Concentration (molar)",
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
+              "Min": 0.1,
+              "Max": 5054.85156,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
@@ -13705,7 +13713,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11_snap\npo, 40  mg (sol)_Wiebe 2020_1006+3006_Mean\n2024-12-09 14:15"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40  mg (sol)_Wiebe 2020_1006+3006_Mean\n2025-02-06 14:03"
         }
       ]
     },
@@ -13760,8 +13768,14 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 40 mg (tab)_Shen 2019_1003|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma"
+        }
       ],
       "Individual": "Shen 2019, 25.6 y, 62.5 kg, male individuum",
       "Compounds": [
@@ -13850,7 +13864,6 @@
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -13880,17 +13893,6 @@
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
-            },
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "po, 40 mg (tab)_Shen 2019_1003|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 7,
-                "LineStyle": "Dash"
-              }
             }
           ],
           "Name": "Time Profile Analysis",
@@ -13911,7 +13913,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11_snap\npo, 40 mg (tab)_Shen 2019_1003\n2024-12-09 14:18"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40 mg (tab)_Shen 2019_1003\n2025-02-06 13:22"
         }
       ]
     },
@@ -14248,9 +14250,14 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Homeida 1977 - with probenecid_Furosemide_40_iv_2001_Plasma"
+        }
       ],
       "Individual": "Homeida 1977, 23 y, male individuum",
       "Compounds": [
@@ -14370,7 +14377,7 @@
               "GridLines": false,
               "Visible": true,
               "Min": 74.0,
-              "Max": 80.0,
+              "Max": 78.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -14384,17 +14391,14 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
+              "Scaling": "Log",
               "NumberMode": "Normal"
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -14421,17 +14425,6 @@
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
-            },
-            {
-              "Name": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid-Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 5,
-                "LineStyle": "Dash"
-              }
             }
           ],
           "Name": "Time Profile Analysis",
@@ -14452,7 +14445,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\niv, 40  mg (bolus)_Homeida 1977_2001_with probenecid\n2024-12-19 10:40"
+          "OriginText": "Probenecid-Furosemide-DDI\niv, 40  mg (bolus)_Homeida 1977_2001_with probenecid\n2025-02-06 13:19"
         }
       ],
       "Interactions": [
@@ -14539,6 +14532,18 @@
         "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_40_po_2006_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_40_po_4006_Urine"
+        }
       ],
       "Individual": "Wiebe 2020, male, 34 y, 79 kg, 179 cm, therapeutic dose",
       "Compounds": [
@@ -15064,6 +15069,18 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine"
+        }
+      ],
       "Individual": "Smith 1980, mean male individuum",
       "Compounds": [
         {
@@ -15182,7 +15199,7 @@
               "GridLines": false,
               "Visible": true,
               "Min": 13.0,
-              "Max": 45.0,
+              "Max": 38.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -15362,11 +15379,19 @@
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-        "Organism|Liver|Periportal|Intracellular|Furosemide|Concentration in container",
-        "Organism|Liver|Periportal|Intracellular|Probenecid|Concentration in container",
-        "Organism|Liver|Intracellular|Furosemide|Concentration in container (Liver, Intracellular)",
-        "Organism|Liver|Intracellular|Probenecid|Concentration in container (Liver, Intracellular)"
+        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine"
+        }
       ],
       "Individual": "Wiebe 2020, male, 33 y, 79 kg, 180 cm, cocktail",
       "Compounds": [
@@ -15584,7 +15609,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\npo, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid\n2024-12-18 14:28"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid\n2025-02-06 13:20"
         }
       ],
       "Interactions": [
@@ -15667,9 +15692,14 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 40 mg (tab)_Shen 2019_2003_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Shen 2019 - with probenecid_Furosemide_40_po_2003_Plasma"
+        }
       ],
       "Individual": "Shen 2019, 25.6 y, 62.5 kg, male individuum",
       "Compounds": [
@@ -15812,12 +15842,9 @@
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -15844,17 +15871,6 @@
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
-            },
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "po, 40 mg (tab)_Shen 2019_2003_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 9,
-                "LineStyle": "Dash"
-              }
             }
           ],
           "Name": "Time Profile Analysis",
@@ -15875,7 +15891,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\npo, 40 mg (tab)_Shen 2019_2003_with probenecid\n2024-12-18 14:24"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40 mg (tab)_Shen 2019_2003_with probenecid\n2025-02-06 13:22"
         }
       ],
       "Interactions": [
@@ -16676,7 +16692,7 @@
             0.194351
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -17981,7 +17997,7 @@
             0.0873606
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18128,7 +18144,7 @@
             0.014269447
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18509,7 +18525,7 @@
             0.0131369932
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18647,7 +18663,7 @@
             0.0767617
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
