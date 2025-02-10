@@ -195,7 +195,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Smith 1980 (40 mg IV)",
-                "SimulationDuration": 30,
+                "SimulationDuration": 20,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -225,7 +225,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Wiebe 2020 (0.1mg PO)",
-                "SimulationDuration": 50,
+                "SimulationDuration": 40,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -255,7 +255,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Wiebe 2020 (40mg PO)",
-                "SimulationDuration": 50,
+                "SimulationDuration": 40,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -263,7 +263,7 @@
                         "Simulation": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
                         "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma",
-                        "StartTime": 10,
+                        "StartTime": 13,
                         "TimeUnit": "h",
                         "Color": "#2166ac",
                         "Caption": "Control (without Probenecid)",
@@ -274,7 +274,7 @@
                         "Simulation": "po, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid",
                         "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                         "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_40_po_2006_Plasma",
-                        "StartTime": 10,
+                        "StartTime": 13,
                         "TimeUnit": "h",
                         "Color": "#b2182b",
                         "Caption": "Treatment (with Probenecid)",
@@ -285,7 +285,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Shen 2019 (40mg PO)",
-                "SimulationDuration": 30,
+                "SimulationDuration": 25,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -315,7 +315,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Vree 1995 (80mg PO)",
-                "SimulationDuration": 20,
+                "SimulationDuration": 14,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -379,14 +379,14 @@
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40  mg (bolus)_Homeida 1977_1001",
-                                    "StartTime": 72,
+                                    "StartTime": 74,
                                     "EndTime": 77,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid",
-                                    "StartTime": 72,
+                                    "StartTime": 74,
                                     "EndTime": 77,
                                     "TimeUnit": "h"
                                 }
@@ -462,14 +462,14 @@
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40 mg (tab)_Shen 2019_1003",
-                                    "StartTime": 0,
-                                    "EndTime": 24,
+                                    "StartTime": 1,
+                                    "EndTime": 14,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40 mg (tab)_Shen 2019_2003_with probenecid",
-                                    "StartTime": 0,
+                                    "StartTime": 1,
                                     "EndTime": 24,
                                     "TimeUnit": "h"
                                 }
@@ -482,7 +482,7 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 80 mg (tab)_Vree 1995_1004+3004",
                                     "StartTime": 1,
-                                    "EndTime": 12,
+                                    "EndTime": 6,
                                     "TimeUnit": "h"
                                 },
                                 "SimulationDDI": {
