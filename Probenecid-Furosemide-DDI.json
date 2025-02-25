@@ -11979,34 +11979,6 @@
         },
         {
           "InternalName": "ActiveTransportSpecific_MM",
-          "DataSource": "BI internal data",
-          "Molecule": "OATP1B1",
-          "Parameters": [
-            {
-              "Name": "Transporter concentration",
-              "Value": 1.0,
-              "Unit": "µmol/l"
-            },
-            {
-              "Name": "Vmax",
-              "Value": 0.0,
-              "Unit": "µmol/l/min"
-            },
-            {
-              "Name": "Km",
-              "Value": 148.4785115832,
-              "Unit": "µmol/l",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Method": "InVitro",
-                "Description": "https://doi.org/10.1007/s11095-020-02964-z"
-              }
-            }
-          ],
-          "Description": "A transporter mediated unidirectional transfer of a compound across a cellular membrane is described as saturable process following Michaelis-Menten type kinetics. The corresponding kcat value is calculated from a specific Vmax as input value."
-        },
-        {
-          "InternalName": "ActiveTransportSpecific_MM",
           "DataSource": "Prasad 2020",
           "Molecule": "ABCC4",
           "Parameters": [
@@ -13169,7 +13141,6 @@
               "MoleculeName": "ABCC4"
             },
             {
-              "Name": "OATP1B1-BI internal data",
               "MoleculeName": "OATP1B1"
             },
             {
@@ -13211,16 +13182,6 @@
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
               "NumberMode": "Normal"
             }
           ],
@@ -13264,877 +13225,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI\niv, 40  mg (bolus)_Homeida 1977_1001\n2025-02-06 13:19"
-        }
-      ]
-    },
-    {
-      "Name": "iv, 40 mg (3 min)_Smith 1980_1002+3002",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma",
-        "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 40.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 10.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Furosemide|Intestinal permeability (paracellular)",
-          "Value": 2.3198505018E-06,
-          "Unit": "cm/min",
-          "ValueOrigin": {
-            "Id": 47,
-            "Source": "Unknown"
-          }
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
-      ],
-      "Individual": "Smith 1980, mean male individuum",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "Name": "OATP1B1-BI internal data",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Smith 1980 - Furosemide - 40 mg i.v. (3 min) s.d. (1 h after P)"
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 13.0,
-              "Max": 30.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Dimension": "Fraction",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "iv, 40 mg (3 min)_Smith 1980_1002+3002-Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "iv, 40 mg (3 min)_Smith 1980_1002+3002|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 5,
-                "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "iv, 40 mg (3 min)_Smith 1980_1002+3002-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "iv, 40 mg (3 min)_Smith 1980_1002+3002|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 4
-              }
-            },
-            {
-              "Name": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma|Time ",
-              "Y": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 6,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine|Time ",
-              "Y": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Probenecid-Furosemide-DDI-V11_snap\niv, 40 mg (3 min)_Smith 1980_1002+3002\n2024-12-09 13:48"
-        }
-      ]
-    },
-    {
-      "Name": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine",
-        "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 50.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 10.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|Wiebe 2020 - Furosemide - 40 mg p.o. (sol) s.d. (1 h after P)|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Furosemide|Intestinal permeability (paracellular)",
-          "Value": 2.3198505018E-06,
-          "Unit": "cm/min",
-          "ValueOrigin": {
-            "Id": 47,
-            "Source": "Unknown"
-          }
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
-      ],
-      "OutputMappings": [
-        {
-          "Scaling": "Log",
-          "Path": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma"
-        },
-        {
-          "Scaling": "Linear",
-          "Path": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine"
-        }
-      ],
-      "Individual": "Wiebe 2020, male, 34 y, 79 kg, 179 cm, therapeutic dose",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "Name": "OATP1B1-BI internal data",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Wiebe 2020 - Furosemide - 40 mg p.o. (sol) s.d. (1 h after P)",
-            "Formulations": [
-              {
-                "Name": "Solution",
-                "Key": "Solution"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 13.0,
-              "Max": 50.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "nmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.1,
-              "Max": 5054.85156,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Dimension": "Fraction",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 9
-              }
-            },
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 10,
-                "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "Boehringer 2018 - Furosemide control_Furosemide_40_po_3006_Urine-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine|Time ",
-              "Y": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Boehringer 2018 - Furosemide control_Furosemide_40_po_1006_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma|Time ",
-              "Y": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Probenecid-Furosemide-DDI\npo, 40  mg (sol)_Wiebe 2020_1006+3006_Mean\n2025-02-06 14:03"
-        }
-      ]
-    },
-    {
-      "Name": "po, 40 mg (tab)_Shen 2019_1003",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 30.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 10.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|Shen 2019 - Furosemide - 40 mg p.o. (tab) s.d. (1 h after P)|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Furosemide|Intestinal permeability (paracellular)",
-          "Value": 2.3198505018E-06,
-          "Unit": "cm/min",
-          "ValueOrigin": {
-            "Id": 47,
-            "Source": "Unknown"
-          }
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
-      ],
-      "OutputMappings": [
-        {
-          "Scaling": "Log",
-          "Path": "po, 40 mg (tab)_Shen 2019_1003|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-          "ObservedData": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma"
-        }
-      ],
-      "Individual": "Shen 2019, 25.6 y, 62.5 kg, male individuum",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "Name": "OATP1B1-BI internal data",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Shen 2019 - Furosemide - 40 mg p.o. (tab) s.d. (1 h after P)",
-            "Formulations": [
-              {
-                "Name": "Immediate release",
-                "Key": "immediate release"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "po, 40 mg (tab)_Shen 2019_1003|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 8
-              }
-            },
-            {
-              "Name": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma|Time ",
-              "Y": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 6,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Probenecid-Furosemide-DDI\npo, 40 mg (tab)_Shen 2019_1003\n2025-02-06 13:22"
-        }
-      ]
-    },
-    {
-      "Name": "po, 80 mg (tab)_Vree 1995_1004+3004",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine",
-        "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 20.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 10.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|Vree 1995 - Furosemide - 80 mg p.o. (tab) s.d. (1 h after P)|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Furosemide|Intestinal permeability (paracellular)",
-          "Value": 2.3198505018E-06,
-          "Unit": "cm/min",
-          "ValueOrigin": {
-            "Id": 47,
-            "Source": "Unknown"
-          }
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
-      ],
-      "Individual": "Vree 1995, 35 y, 78 kg, male individuum",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "Name": "OATP1B1-BI internal data",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Vree 1995 - Furosemide - 80 mg p.o. (tab) s.d. (1 h after P)",
-            "Formulations": [
-              {
-                "Name": "Immediate release",
-                "Key": "immediate release"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Dimension": "Fraction",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "po, 80 mg (tab)_Vree 1995_1004+3004-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "po, 80 mg (tab)_Vree 1995_1004+3004|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 5
-              }
-            },
-            {
-              "Name": "po, 80 mg (tab)_Vree 1995_1004+3004-Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "po, 80 mg (tab)_Vree 1995_1004+3004|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 6,
-                "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine|Time ",
-              "Y": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma|Time ",
-              "Y": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Probenecid-Furosemide-DDI-V11_snap\npo, 80 mg (tab)_Vree 1995_1004+3004\n2024-12-09 14:25"
+          "OriginText": "Probenecid-Furosemide-DDI\niv, 40  mg (bolus)_Homeida 1977_1001\n2025-02-11 18:02"
         }
       ]
     },
@@ -14296,7 +13387,6 @@
               "MoleculeName": "ABCC4"
             },
             {
-              "Name": "OATP1B1-BI internal data",
               "MoleculeName": "OATP1B1"
             },
             {
@@ -14393,16 +13483,6 @@
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
             }
           ],
           "Curves": [
@@ -14445,7 +13525,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI\niv, 40  mg (bolus)_Homeida 1977_2001_with probenecid\n2025-02-06 13:19"
+          "OriginText": "Probenecid-Furosemide-DDI\niv, 40  mg (bolus)_Homeida 1977_2001_with probenecid\n2025-02-11 18:02"
         }
       ],
       "Interactions": [
@@ -14463,6 +13543,1320 @@
           "Name": "ABCC4-Fitted",
           "MoleculeName": "ABCC4",
           "CompoundName": "Probenecid"
+        }
+      ]
+    },
+    {
+      "Name": "iv, 40 mg (3 min)_Smith 1980_1002+3002",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma",
+        "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 40.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "iv, 40 mg (3 min)_Smith 1980_1002+3002|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "iv, 40 mg (3 min)_Smith 1980_1002+3002|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine"
+        }
+      ],
+      "Individual": "Smith 1980, mean male individuum",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Smith 1980 - Furosemide - 40 mg i.v. (3 min) s.d. (1 h after P)"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 13.0,
+              "Max": 30.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/ml",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "iv, 40 mg (3 min)_Smith 1980_1002+3002-Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "iv, 40 mg (3 min)_Smith 1980_1002+3002|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 5,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "iv, 40 mg (3 min)_Smith 1980_1002+3002-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "iv, 40 mg (3 min)_Smith 1980_1002+3002|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 4
+              }
+            },
+            {
+              "Name": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma|Time ",
+              "Y": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine|Time ",
+              "Y": "Smith 1980 - Furosemide control_Furosemide_40_iv_3002_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Probenecid-Furosemide-DDI\niv, 40 mg (3 min)_Smith 1980_1002+3002\n2025-02-11 18:03"
+        }
+      ]
+    },
+    {
+      "Name": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma",
+        "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 45.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Smith 1980 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Smith 1980 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine"
+        }
+      ],
+      "Individual": "Smith 1980, mean male individuum",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Smith 1980 - Furosemide - 40 mg i.v. (3 min) s.d. (1 h after P)"
+          }
+        },
+        {
+          "Name": "Probenecid",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - Charge dependent Schmitt normalized to PK-Sim"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Ito 2014",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-assumed",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Smith 1980 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F",
+            "Formulations": [
+              {
+                "Name": "tablet",
+                "Key": "Solution"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 13.0,
+              "Max": 38.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/ml",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma|Time ",
+              "Y": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine|Time ",
+              "Y": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 9
+              }
+            },
+            {
+              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 10,
+                "LineStyle": "Dash"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Probenecid-Furosemide-DDI\niv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid\n2025-02-11 18:06"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "OAT3-Tsuruya 2016",
+          "MoleculeName": "OAT3",
+          "CompoundName": "Probenecid"
+        },
+        {
+          "Name": "UGT1A9-Wang 2020",
+          "MoleculeName": "UGT1A9",
+          "CompoundName": "Probenecid"
+        },
+        {
+          "Name": "ABCC4-Fitted",
+          "MoleculeName": "ABCC4",
+          "CompoundName": "Probenecid"
+        }
+      ]
+    },
+    {
+      "Name": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine",
+        "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 50.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine"
+        }
+      ],
+      "Individual": "Wiebe 2020, male, 33 y, 79 kg, 180 cm, cocktail",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Solution"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 12.0,
+              "Max": 50.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/ml",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 9,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 10
+              }
+            },
+            {
+              "Name": "Boehringer 2018 - Furosemide control_Furosemide_1_po_3005_Urine-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine|Time ",
+              "Y": "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Boehringer 2018 - Furosemide control_Furosemide_1_po_1005_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma|Time ",
+              "Y": "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 1  mg (sol)_Wiebe 2020_1005+3005_Mean\n2025-02-11 18:08"
+        }
+      ]
+    },
+    {
+      "Name": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine",
+        "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 50.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Wiebe 2020 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Applications|Wiebe 2020 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine"
+        }
+      ],
+      "Individual": "Wiebe 2020, male, 33 y, 79 kg, 180 cm, cocktail",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Solution"
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Probenecid",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - PK-Sim Standard",
+            "Cellular permeability - Charge dependent Schmitt normalized to PK-Sim"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Ito 2014",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-assumed",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Wiebe 2020 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F",
+            "Formulations": [
+              {
+                "Name": "tablet",
+                "Key": "Solution"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 12.0,
+              "Max": 50.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/ml",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 9,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Boehringer 2018 - with probenecid_Furosemide_1_po_4005_Urine-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine|Time ",
+              "Y": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Boehringer 2018 - with probenecid_Furosemide_1_po_2005_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma|Time ",
+              "Y": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 10
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid\n2025-02-11 18:07"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "OAT3-Tsuruya 2016",
+          "MoleculeName": "OAT3",
+          "CompoundName": "Probenecid"
+        },
+        {
+          "Name": "UGT1A9-Wang 2020",
+          "MoleculeName": "UGT1A9",
+          "CompoundName": "Probenecid"
+        },
+        {
+          "Name": "ABCC4-Fitted",
+          "MoleculeName": "ABCC4",
+          "CompoundName": "Probenecid"
+        }
+      ]
+    },
+    {
+      "Name": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine",
+        "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 50.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Wiebe 2020 - Furosemide - 40 mg p.o. (sol) s.d. (1 h after P)|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine"
+        }
+      ],
+      "Individual": "Wiebe 2020, male, 34 y, 79 kg, 179 cm, therapeutic dose",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Wiebe 2020 - Furosemide - 40 mg p.o. (sol) s.d. (1 h after P)",
+            "Formulations": [
+              {
+                "Name": "Solution",
+                "Key": "Solution"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 13.0,
+              "Max": 50.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "nmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 5054.85156,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 9
+              }
+            },
+            {
+              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 10,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Boehringer 2018 - Furosemide control_Furosemide_40_po_3006_Urine-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine|Time ",
+              "Y": "Wiebe 2020 - Furosemide control_Furosemide_40_po_3006_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Boehringer 2018 - Furosemide control_Furosemide_40_po_1006_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma|Time ",
+              "Y": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40  mg (sol)_Wiebe 2020_1006+3006_Mean\n2025-02-11 18:08"
         }
       ]
     },
@@ -14582,7 +14976,6 @@
               "MoleculeName": "ABCC4"
             },
             {
-              "Name": "OATP1B1-BI internal data",
               "MoleculeName": "OATP1B1"
             },
             {
@@ -14763,7 +15156,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\npo, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid\n2024-12-18 14:25"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid\n2025-02-11 18:12"
         }
       ],
       "Interactions": [
@@ -14785,11 +15178,10 @@
       ]
     },
     {
-      "Name": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean",
+      "Name": "po, 40 mg (tab)_Shen 2019_1003",
       "Model": "4Comp",
       "ObservedData": [
-        "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine",
-        "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma"
+        "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma"
       ],
       "Solver": {},
       "OutputSchema": [
@@ -14802,7 +15194,7 @@
             },
             {
               "Name": "End time",
-              "Value": 50.0,
+              "Value": 30.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -14821,7 +15213,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Applications|Shen 2019 - Furosemide - 40 mg p.o. (tab) s.d. (1 h after P)|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -14836,252 +15228,16 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
-      ],
-      "Individual": "Wiebe 2020, male, 33 y, 79 kg, 180 cm, cocktail",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "Name": "OATP1B1-BI internal data",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)",
-            "Formulations": [
-              {
-                "Name": "Solution",
-                "Key": "Solution"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 12.0,
-              "Max": 50.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Dimension": "Fraction",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 9,
-                "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 10
-              }
-            },
-            {
-              "Name": "Boehringer 2018 - Furosemide control_Furosemide_1_po_3005_Urine-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine|Time ",
-              "Y": "Wiebe 2020 - Furosemide control_Furosemide_1_po_3005_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Boehringer 2018 - Furosemide control_Furosemide_1_po_1005_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma|Time ",
-              "Y": "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\npo, 1  mg (sol)_Wiebe 2020_1005+3005_Mean\n2024-12-18 14:54"
-        }
-      ]
-    },
-    {
-      "Name": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma",
-        "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 45.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 10.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|Smith 1980 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Applications|Smith 1980 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Furosemide|Intestinal permeability (paracellular)",
-          "Value": 2.3198505018E-06,
-          "Unit": "cm/min",
-          "ValueOrigin": {
-            "Id": 47,
-            "Source": "Unknown"
-          }
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
           "Scaling": "Log",
-          "Path": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-          "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma"
-        },
-        {
-          "Scaling": "Linear",
-          "Path": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-          "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine"
+          "Path": "po, 40 mg (tab)_Shen 2019_1003|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma"
         }
       ],
-      "Individual": "Smith 1980, mean male individuum",
+      "Individual": "Shen 2019, 25.6 y, 62.5 kg, male individuum",
       "Compounds": [
         {
           "Name": "Furosemide",
@@ -15118,7 +15274,6 @@
               "MoleculeName": "ABCC4"
             },
             {
-              "Name": "OATP1B1-BI internal data",
               "MoleculeName": "OATP1B1"
             },
             {
@@ -15130,59 +15285,11 @@
             }
           ],
           "Protocol": {
-            "Name": "Smith 1980 - Furosemide - 40 mg i.v. (3 min) s.d. (1 h after P)"
-          }
-        },
-        {
-          "Name": "Probenecid",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - PK-Sim Standard",
-            "Cellular permeability - Charge dependent Schmitt normalized to PK-Sim"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Ito 2014",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-assumed",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Smith 1980 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F",
+            "Name": "Shen 2019 - Furosemide - 40 mg p.o. (tab) s.d. (1 h after P)",
             "Formulations": [
               {
-                "Name": "tablet",
-                "Key": "Solution"
+                "Name": "Immediate release",
+                "Key": "immediate release"
               }
             ]
           }
@@ -15198,8 +15305,6 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "Min": 13.0,
-              "Max": 38.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
@@ -15213,17 +15318,15 @@
               "Visible": true,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
+              "Scaling": "Linear",
               "NumberMode": "Normal"
             },
             {
               "Unit": "",
-              "Dimension": "Fraction",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 1.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -15232,47 +15335,24 @@
           ],
           "Curves": [
             {
-              "Name": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma|Time ",
-              "Y": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "po, 40 mg (tab)_Shen 2019_1003|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
                 "Color": "#FF0000",
-                "LegendIndex": 5,
-                "LineStyle": "None",
-                "Symbol": "Circle"
+                "LegendIndex": 8
               }
             },
             {
-              "Name": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine|Time ",
-              "Y": "Smith 1980 - with probenecid_Furosemide_40_iv_4002_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "Name": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma|Time ",
+              "Y": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
               "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
+                "Color": "#FF0000",
                 "LegendIndex": 6,
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
-            },
-            {
-              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 9
-              }
-            },
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 10,
-                "LineStyle": "Dash"
-              }
             }
           ],
           "Name": "Time Profile Analysis",
@@ -15293,340 +15373,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\niv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid\n2024-12-18 14:26"
-        }
-      ],
-      "Interactions": [
-        {
-          "Name": "OAT3-Tsuruya 2016",
-          "MoleculeName": "OAT3",
-          "CompoundName": "Probenecid"
-        },
-        {
-          "Name": "UGT1A9-Wang 2020",
-          "MoleculeName": "UGT1A9",
-          "CompoundName": "Probenecid"
-        },
-        {
-          "Name": "ABCC4-Fitted",
-          "MoleculeName": "ABCC4",
-          "CompoundName": "Probenecid"
-        }
-      ]
-    },
-    {
-      "Name": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine",
-        "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma"
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 50.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 10.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Applications|Wiebe 2020 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Applications|Wiebe 2020 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F|tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        },
-        {
-          "Path": "Furosemide|Intestinal permeability (paracellular)",
-          "Value": 2.3198505018E-06,
-          "Unit": "cm/min",
-          "ValueOrigin": {
-            "Id": 47,
-            "Source": "Unknown"
-          }
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
-      ],
-      "OutputMappings": [
-        {
-          "Scaling": "Log",
-          "Path": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma"
-        },
-        {
-          "Scaling": "Linear",
-          "Path": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-          "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine"
-        }
-      ],
-      "Individual": "Wiebe 2020, male, 33 y, 79 kg, 180 cm, cocktail",
-      "Compounds": [
-        {
-          "Name": "Furosemide",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Schmitt",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Kerdpin 2008",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-Ebner 2015",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "Name": "ABCC4-Prasad 2020",
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "Name": "OATP1B1-BI internal data",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-assumed",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Wiebe 2020 - Furosemide - 1 mg p.o. (sol) s.d. (1 h after P)",
-            "Formulations": [
-              {
-                "Name": "Solution",
-                "Key": "Solution"
-              }
-            ]
-          }
-        },
-        {
-          "Name": "Probenecid",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - PK-Sim Standard",
-            "Cellular permeability - Charge dependent Schmitt normalized to PK-Sim"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "UGT1A9-Ito 2014",
-              "MoleculeName": "UGT1A9"
-            },
-            {
-              "MoleculeName": "UGT1A1"
-            },
-            {
-              "Name": "OAT3-assumed",
-              "MoleculeName": "OAT3"
-            },
-            {
-              "MoleculeName": "OAT1"
-            },
-            {
-              "MoleculeName": "BCRP"
-            },
-            {
-              "MoleculeName": "ABCC4"
-            },
-            {
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "MoleculeName": "MRP2"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR",
-              "SystemicProcessType": "GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "Wiebe 2020 - Probenecid - 1 g p.o. (tab) 13 and 1 h before F",
-            "Formulations": [
-              {
-                "Name": "tablet",
-                "Key": "Solution"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "Min": 12.0,
-              "Max": 50.0,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µg/ml",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "",
-              "Dimension": "Fraction",
-              "Type": "Y2",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Dash",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "Furosemide-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 9,
-                "LineStyle": "Dash"
-              }
-            },
-            {
-              "Name": "Boehringer 2018 - with probenecid_Furosemide_1_po_4005_Urine-Furosemide-Kidney-Urine-Fraction ",
-              "X": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine|Time ",
-              "Y": "Wiebe 2020 - with probenecid_Furosemide_1_po_4005_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 8,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Boehringer 2018 - with probenecid_Furosemide_1_po_2005_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
-              "X": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma|Time ",
-              "Y": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 7,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Furosemide-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 10
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "FontAndSize": {
-            "Fonts": {
-              "AxisSize": 10,
-              "LegendSize": 8,
-              "TitleSize": 16,
-              "DescriptionSize": 12,
-              "OriginSize": 8,
-              "FontFamilyName": "Microsoft Sans Serif",
-              "WatermarkSize": 32
-            }
-          },
-          "Settings": {
-            "SideMarginsEnabled": true,
-            "LegendPosition": "Bottom",
-            "BackColor": "#00FFFFFF",
-            "DiagramBackColor": "#FFFFFF"
-          },
-          "OriginText": "Probenecid-Furosemide-DDI\npo, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid\n2025-02-06 13:20"
-        }
-      ],
-      "Interactions": [
-        {
-          "Name": "OAT3-Tsuruya 2016",
-          "MoleculeName": "OAT3",
-          "CompoundName": "Probenecid"
-        },
-        {
-          "Name": "UGT1A9-Wang 2020",
-          "MoleculeName": "UGT1A9",
-          "CompoundName": "Probenecid"
-        },
-        {
-          "Name": "ABCC4-Fitted",
-          "MoleculeName": "ABCC4",
-          "CompoundName": "Probenecid"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40 mg (tab)_Shen 2019_1003\n2025-02-11 18:13"
         }
       ]
     },
@@ -15738,7 +15485,6 @@
               "MoleculeName": "ABCC4"
             },
             {
-              "Name": "OATP1B1-BI internal data",
               "MoleculeName": "OATP1B1"
             },
             {
@@ -15842,6 +15588,7 @@
             },
             {
               "Unit": "",
+              "Dimension": "Dimensionless",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -15891,7 +15638,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI\npo, 40 mg (tab)_Shen 2019_2003_with probenecid\n2025-02-06 13:22"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 40 mg (tab)_Shen 2019_2003_with probenecid\n2025-02-11 18:12"
         }
       ],
       "Interactions": [
@@ -15909,6 +15656,238 @@
           "Name": "ABCC4-Fitted",
           "MoleculeName": "ABCC4",
           "CompoundName": "Probenecid"
+        }
+      ]
+    },
+    {
+      "Name": "po, 80 mg (tab)_Vree 1995_1004+3004",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine",
+        "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma"
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 20.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 10.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|Vree 1995 - Furosemide - 80 mg p.o. (tab) s.d. (1 h after P)|Immediate release|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
+          "Path": "Furosemide|Intestinal permeability (paracellular)",
+          "Value": 2.3198505018E-06,
+          "Unit": "cm/min",
+          "ValueOrigin": {
+            "Id": 47,
+            "Source": "Unknown"
+          }
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+        "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 80 mg (tab)_Vree 1995_1004+3004|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 80 mg (tab)_Vree 1995_1004+3004|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine"
+        }
+      ],
+      "Individual": "Vree 1995, 35 y, 78 kg, male individuum",
+      "Compounds": [
+        {
+          "Name": "Furosemide",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Schmitt",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "UGT1A9-Kerdpin 2008",
+              "MoleculeName": "UGT1A9"
+            },
+            {
+              "MoleculeName": "UGT1A1"
+            },
+            {
+              "Name": "OAT3-Ebner 2015",
+              "MoleculeName": "OAT3"
+            },
+            {
+              "MoleculeName": "OAT1"
+            },
+            {
+              "MoleculeName": "BCRP"
+            },
+            {
+              "Name": "ABCC4-Prasad 2020",
+              "MoleculeName": "ABCC4"
+            },
+            {
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "MoleculeName": "MRP2"
+            },
+            {
+              "Name": "Glomerular Filtration-assumed",
+              "SystemicProcessType": "GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "Vree 1995 - Furosemide - 80 mg p.o. (tab) s.d. (1 h after P)",
+            "Formulations": [
+              {
+                "Name": "Immediate release",
+                "Key": "immediate release"
+              }
+            ]
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/ml",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "",
+              "Dimension": "Fraction",
+              "Type": "Y2",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 1.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Dash",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "po, 80 mg (tab)_Vree 1995_1004+3004-Furosemide-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "po, 80 mg (tab)_Vree 1995_1004+3004|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 5
+              }
+            },
+            {
+              "Name": "po, 80 mg (tab)_Vree 1995_1004+3004-Furosemide-Kidney-Urine-Fraction excreted to urine",
+              "X": "Time",
+              "Y": "po, 80 mg (tab)_Vree 1995_1004+3004|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 6,
+                "LineStyle": "Dash"
+              }
+            },
+            {
+              "Name": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine-Furosemide-Kidney-Urine-Fraction ",
+              "X": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine|Time ",
+              "Y": "Vree 1995 - Furosemide control_Furosemide_80_po_3004_Urine|ObservedData|Kidney|Urine|Furosemide|Fraction ",
+              "CurveOptions": {
+                "yAxisType": "Y2",
+                "Color": "#C0C000",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma-Furosemide-Peripheral Venous Blood-Plasma-Conc ",
+              "X": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma|Time ",
+              "Y": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma|ObservedData|Peripheral Venous Blood|Plasma|Furosemide|Conc ",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "Bottom",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 80 mg (tab)_Vree 1995_1004+3004\n2025-02-11 18:12"
         }
       ]
     },
@@ -15974,6 +15953,18 @@
         "Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
         "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "po, 80 mg (tab)_Vree 1995_2004+4004_with probenecid|Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Vree 1995 - with probenecid_Furosemide_80_po_2004_Plasma"
+        },
+        {
+          "Scaling": "Linear",
+          "Path": "po, 80 mg (tab)_Vree 1995_2004+4004_with probenecid|Organism|Kidney|Urine|Furosemide|Fraction excreted to urine",
+          "ObservedData": "Vree 1995 - with probenecid_Furosemide_80_po_4004_Urine"
+        }
+      ],
       "Individual": "Vree 1995, 35 y, 78 kg, male individuum",
       "Compounds": [
         {
@@ -16011,7 +16002,6 @@
               "MoleculeName": "ABCC4"
             },
             {
-              "Name": "OATP1B1-BI internal data",
               "MoleculeName": "OATP1B1"
             },
             {
@@ -16190,7 +16180,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Furosemide-DDI-V11\npo, 80 mg (tab)_Vree 1995_2004+4004_with probenecid\n2024-12-18 14:25"
+          "OriginText": "Probenecid-Furosemide-DDI\npo, 80 mg (tab)_Vree 1995_2004+4004_with probenecid\n2025-02-25 17:27"
         }
       ],
       "Interactions": [
@@ -16559,7 +16549,7 @@
             0.0213831346
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -16996,7 +16986,7 @@
             0.565288961
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -17138,7 +17128,7 @@
             0.0192976221
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -17506,7 +17496,7 @@
             0.000357221259
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18663,7 +18653,7 @@
             0.0767617
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/ml"
         }
       ],
       "BaseGrid": {
@@ -18969,7 +18959,7 @@
             0.000246379263
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
