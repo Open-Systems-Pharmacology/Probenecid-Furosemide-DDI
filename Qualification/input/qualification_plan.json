@@ -11,7 +11,7 @@
         },
         {
             "Id": "Probenecid-Furosemide-DDI",
-            "Path": "https://raw.githubusercontent.com/mgsc1020/Probenecid-Furosemide-DDI/refs/heads/main/Probenecid-Furosemide-DDI.json",
+            "Path": "../../Probenecid-Furosemide-DDI.json",
             "BuildingBlocks": [
                 {
                     "Type": "Compound",
@@ -165,7 +165,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Homeida 1977 (40mg IV)",
-                "SimulationDuration": 80,
+                "SimulationDuration": 4,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -195,7 +195,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Smith 1980 (40 mg IV)",
-                "SimulationDuration": 20,
+                "SimulationDuration": 7,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -225,7 +225,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Wiebe 2020 (0.1mg PO)",
-                "SimulationDuration": 40,
+                "SimulationDuration": 25,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -255,7 +255,7 @@
             {
                 "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
                 "Title": "Wiebe 2020 (40mg PO)",
-                "SimulationDuration": 40,
+                "SimulationDuration": 25,
                 "TimeUnit": "h",
                 "OutputMappings": [
                     {
@@ -375,7 +375,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17000,
+                                "ObservedDataRecordId": 18000,
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40  mg (bolus)_Homeida 1977_1001",
@@ -394,7 +394,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17001,
+                                "ObservedDataRecordId": 18001,
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "iv, 40 mg (3 min)_Smith 1980_1002+3002",
@@ -420,7 +420,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17002,
+                                "ObservedDataRecordId": 18002,
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean",
@@ -439,7 +439,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17003,
+                                "ObservedDataRecordId": 18003,
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
@@ -458,7 +458,7 @@
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17004,
+                                "ObservedDataRecordId": 18004,
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40 mg (tab)_Shen 2019_1003",
@@ -470,14 +470,14 @@
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 40 mg (tab)_Shen 2019_2003_with probenecid",
                                     "StartTime": 1,
-                                    "EndTime": 24,
+                                    "EndTime": 25,
                                     "TimeUnit": "h"
                                 }
                             },
                             {
                                 "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "DDI Ratios",
-                                "ObservedDataRecordId": 17005,
+                                "ObservedDataRecordId": 18005,
                                 "SimulationControl": {
                                     "Project": "Probenecid-Furosemide-DDI",
                                     "Simulation": "po, 80 mg (tab)_Vree 1995_1004+3004",
