@@ -3,7 +3,7 @@
     "Projects": [
         {
             "Id": "Probenecid",
-            "Path": "https://raw.githubusercontent.com/ErikssonJ/Probenecid-Model/refs/heads/main/Probenecid-Model.json"
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Probenecid-Model/refs/heads/main/Probenecid-Model.json"
         },
         {
             "Id": "Furosemide",
@@ -45,7 +45,7 @@
     "ObservedDataSets": [
         {
             "Id": "DDI Ratios",
-            "Path": "../../DDI.csv",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/refs/heads/master/DDI.csv",
             "Type": "DDIRatio"
         }
     ],
