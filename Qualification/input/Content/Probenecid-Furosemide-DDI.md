@@ -10,7 +10,7 @@ The Probenecid / Furosemide interaction was evaluated using 5 clinical DDI studi
 |  17001 | OAT  | Probenecid / Furosemide | Probenecid: **1000** mg PO, tablet, BID (D1) Furosemide: **40** IV (3min), SD (D1) |   1 h dose gap      | [Smith 1980](#references)        |
 |    17002 | OAT  | Probenecid / Furosemide | Probenecid: **1000** mg PO, tablet, BID (D1) Furosemide: **1** mg PO, solution, SD (D1)  |   1 h dose gap       | [Wiebe 2020](#references)       |
 |  17003 | OAT   | Probenecid / Furosemide | Probenecid: **400** mg PO, tablet, BID (D1) Furosemide: **40** mg PO, solution, SD (D1)|   1 h dose gap       | [Wiebe 2020](#references)        |
-|  17004 | OAT   | Probenecid / Furosemide | Probenecid: **1000** mg PO, tablet, SD (D1) Furosemide: **40** mg PO, solution, SD (D1)|   1 h dose gap       | [Shen 2009](#references)        |
+|  17004 | OAT   | Probenecid / Furosemide | Probenecid: **1000** mg PO, tablet, SD (D1) Furosemide: **40** mg PO, solution, SD (D1)|   1 h dose gap       | [Shen 2019](#references)        |
 |  17005 | OAT   | Probenecid / Furosemide | Probenecid: **1000** mg PO, tablet, SD (D1) Furosemide: **80** mg PO single dose|    1 h dose gap      | [Vree 1995](#references)        |
 
 
