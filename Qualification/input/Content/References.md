@@ -1,4 +1,4 @@
-﻿## Probenecid - Furosemide DDI
+## Probenecid - Furosemide DDI
 
 **Britz 2020** Britz H, Hanke N, Taub ME, Wang T, Prasad B, Fernandez É, Stopfer P, Nock V, Lehr T. Physiologically Based Pharmacokinetic Models of Probenecid and Furosemide to Predict Transporter Mediated Drug-Drug Interactions. Pharm Res. 2020 Nov 25;37(12):250. doi: 10.1007/s11095-020-02964-z. 
 
