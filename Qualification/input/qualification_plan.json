@@ -3,11 +3,11 @@
     "Projects": [
         {
             "Id": "Probenecid",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Probenecid-Model/refs/heads/main/Probenecid-Model.json"
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Probenecid-Model/v1.0/Probenecid-Model.json"
         },
         {
             "Id": "Furosemide",
-            "Path": "https://raw.githubusercontent.com/mgsc1020/Furosemide-Model/refs/heads/main/Furosemide-Model.json"
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Furosemide-Model/v1.0/Furosemide-Model.json"
         },
         {
             "Id": "Probenecid-Furosemide-DDI",
@@ -27,7 +27,7 @@
                     "Type": "Compound",
                     "Name": "Furosemide",
                     "Project": "Furosemide"
-                }, 
+                },
                 {
                     "Type": "Formulation",
                     "Name": "Solution",
@@ -409,7 +409,7 @@
                                     "EndTime": 18,
                                     "TimeUnit": "h"
                                 }
-                            }                            
+                            }
                         ]
                     },
                     {
