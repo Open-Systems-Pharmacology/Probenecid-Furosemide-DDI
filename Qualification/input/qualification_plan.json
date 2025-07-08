@@ -1,0 +1,575 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.1/schemas/OSP_Qualification_Plan_Schema.json",
+    "Projects": [
+        {
+            "Id": "Probenecid",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Probenecid-Model/v1.0/Probenecid-Model.json"
+        },
+        {
+            "Id": "Furosemide",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Furosemide-Model/v1.0/Furosemide-Model.json"
+        },
+        {
+            "Id": "Probenecid-Furosemide-DDI",
+            "Path": "../../Probenecid-Furosemide-DDI.json",
+            "BuildingBlocks": [
+                {
+                    "Type": "Compound",
+                    "Name": "Probenecid",
+                    "Project": "Probenecid"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "tablet",
+                    "Project": "Probenecid"
+                },
+                {
+                    "Type": "Compound",
+                    "Name": "Furosemide",
+                    "Project": "Furosemide"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Solution",
+                    "Project": "Furosemide"
+                },
+                {
+                    "Type": "Formulation",
+                    "Name": "Immediate release",
+                    "Project": "Furosemide"
+                }
+
+            ]
+        }
+    ],
+    "ObservedDataSets": [
+        {
+            "Id": "DDI Ratios",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.7/DDI.csv",
+            "Type": "DDIRatio"
+        }
+    ],
+    "Plots": {
+        "AxesSettings": {
+            "GOFMergedPlotsPredictedVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "GOFMergedPlotsResidualsOverTime": [
+                {
+                    "Type": "X",
+                    "Dimension": "Time",
+                    "Unit": "h",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "ComparisonTimeProfile": [
+                {
+                    "Type": "X",
+                    "Dimension": "Time",
+                    "Unit": "h",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsPredictedVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsResidualsVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "PKRatioPlots": [
+                {
+                    "Type": "X",
+                    "Dimension": "Age",
+                    "Unit": "year(s)",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ]
+        },
+        "PlotSettings": {
+            "ChartWidth": 500,
+            "ChartHeight": 400,
+            "Fonts": {
+                "AxisSize": 11,
+                "LegendSize": 9,
+                "OriginSize": 9,
+                "FontFamilyName": "Arial",
+                "WatermarkSize": 40
+            }
+        },
+        "AllPlots": [],
+        "GOFMergedPlots": [],
+        "ComparisonTimeProfilePlots": [
+            {
+                "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
+                "Title": "Homeida 1977 (40mg IV)",
+                "SimulationDuration": 4,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "iv, 40  mg (bolus)_Homeida 1977_1001",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Homeida 1977 - Furosemide control_Furosemide_40_iv_1001_Plasma",
+                        "StartTime": 74,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Probenecid)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Homeida 1977 - with probenecid_Furosemide_40_iv_2001_Plasma",
+                        "StartTime": 74,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Probenecid)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
+                "Title": "Smith 1980 (40 mg IV)",
+                "SimulationDuration": 7,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "iv, 40 mg (3 min)_Smith 1980_1002+3002",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Smith 1980 - Furosemide control_Furosemide_40_iv_1002_Plasma",
+                        "StartTime": 13,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Probenecid)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Smith 1980 - with probenecid_Furosemide_40_iv_2002_Plasma",
+                        "StartTime": 13,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Probenecid)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
+                "Title": "Wiebe 2020 (0.1mg PO)",
+                "SimulationDuration": 25,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_1_po_1005_Plasma",
+                        "StartTime": 13,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Probenecid)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_1_po_2005_Plasma",
+                        "StartTime": 13,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Probenecid)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
+                "Title": "Wiebe 2020 (40mg PO)",
+                "SimulationDuration": 25,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Wiebe 2020 - Furosemide control_Furosemide_40_po_1006_Plasma",
+                        "StartTime": 13,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Probenecid)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Wiebe 2020 - with probenecid_Furosemide_40_po_2006_Plasma",
+                        "StartTime": 13,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Probenecid)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
+                "Title": "Shen 2019 (40mg PO)",
+                "SimulationDuration": 25,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 40 mg (tab)_Shen 2019_1003",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Shen 2019 - Furosemide control_Furosemide_40_po_1003_Plasma",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Probenecid)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 40 mg (tab)_Shen 2019_2003_with probenecid",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Shen 2019 - with probenecid_Furosemide_40_po_2003_Plasma",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Probenecid)",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionReference": "Probenecid-Furosemide-DDI-timeprofile",
+                "Title": "Vree 1995 (80mg PO)",
+                "SimulationDuration": 14,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 80 mg (tab)_Vree 1995_1004+3004",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Vree 1995 - Furosemide control_Furosemide_80_po_1004_Plasma",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Probenecid)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Probenecid-Furosemide-DDI",
+                        "Simulation": "po, 80 mg (tab)_Vree 1995_2004+4004_with probenecid",
+                        "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Vree 1995 - with probenecid_Furosemide_80_po_2004_Plasma",
+                        "StartTime": 1,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment (with Probenecid)",
+                        "Symbol": "Square"
+                    }
+                ]
+            }
+        ],
+            "DDIRatioPlots": [
+            {
+                "SectionReference": "qualification-of-use-case-oat-ddi",
+                "Title": "Probenecid-Furosemide DDI",
+                "PKParameters": [
+                    "AUC_tEnd",
+                    "C_max"
+                ],
+                "PlotTypes": [
+                    "predictedVsObserved",
+                    "residualsVsObserved"
+                ],
+                "Artifacts": [
+                    "Plot",
+                    "GMFE",
+                    "Measure",
+                    "Table"
+                ],
+                "Subunits": [
+                    "Mechanism",
+                    "Perpetrator",
+                    "Victim"
+                ],
+                "Groups": [
+                    {
+                        "Caption": "Probenecid + Furosemide (IV)",
+                        "Color": "#FF0000",
+                        "Symbol": "Square",
+                        "DDIRatios": [
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18000,
+                                "SimulationControl": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "iv, 40  mg (bolus)_Homeida 1977_1001",
+                                    "StartTime": 74,
+                                    "EndTime": 77,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "iv, 40  mg (bolus)_Homeida 1977_2001_with probenecid",
+                                    "StartTime": 74,
+                                    "EndTime": 77,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18001,
+                                "SimulationControl": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "iv, 40 mg (3 min)_Smith 1980_1002+3002",
+                                    "StartTime": 13,
+                                    "EndTime": 18,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "iv, 40 mg (3 min)_Smith 1980_2002+4002_with probenecid",
+                                    "StartTime": 13,
+                                    "EndTime": 18,
+                                    "TimeUnit": "h"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Probenecid + Furosemide (PO)",
+                        "Color": "#FF0000",
+                        "Symbol": "Circle",
+                        "DDIRatios": [
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18002,
+                                "SimulationControl": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 1  mg (sol)_Wiebe 2020_1005+3005_Mean",
+                                    "StartTime": 13,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 1  mg (sol)_Wiebe 2020_2005+4005_Mean_with probenecid",
+                                    "StartTime": 13,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18003,
+                                "SimulationControl": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 40  mg (sol)_Wiebe 2020_1006+3006_Mean",
+                                    "StartTime": 13,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 40  mg (sol)_Wiebe 2020_2006+4006_Mean_with probenecid",
+                                    "StartTime": 13,
+                                    "EndTime": 37,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18004,
+                                "SimulationControl": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 40 mg (tab)_Shen 2019_1003",
+                                    "StartTime": 1,
+                                    "EndTime": 14,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 40 mg (tab)_Shen 2019_2003_with probenecid",
+                                    "StartTime": 1,
+                                    "EndTime": 25,
+                                    "TimeUnit": "h"
+                                }
+                            },
+                            {
+                                "Output": "Organism|PeripheralVenousBlood|Furosemide|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "DDI Ratios",
+                                "ObservedDataRecordId": 18005,
+                                "SimulationControl": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 80 mg (tab)_Vree 1995_1004+3004",
+                                    "StartTime": 1,
+                                    "EndTime": 6,
+                                    "TimeUnit": "h"
+                                },
+                                "SimulationDDI": {
+                                    "Project": "Probenecid-Furosemide-DDI",
+                                    "Simulation": "po, 80 mg (tab)_Vree 1995_2004+4004_with probenecid",
+                                    "StartTime": 1,
+                                    "EndTime": 12,
+                                    "TimeUnit": "h"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Inputs": [],
+    "Sections": [
+        {
+            "Reference": "introduction",
+            "Title": "Introduction",
+            "Sections": [
+                {
+                    "Reference": "objective",
+                    "Title": "Objective",
+                    "Content": "Content/Qualification_DDI_objective.md"
+                },
+                {
+                    "Reference": "oat-ddi-network",
+                    "Title": "OAT DDI network",
+                    "Content": "Content/Qualification_description.md",
+                    "Sections": [
+                        {
+                            "Reference": "Probenecid-Furosemide-DDI",
+                            "Title": "Probenecid-Furosemide-DDI",
+                            "Content": "Content/Probenecid-Furosemide-DDI.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Reference": "qualification-of-use-case-oat-ddi",
+            "Title": "Qualification of Use Case Probenecid-Furosemide DDI",
+            "Content": "Content/Intro_evaluation_DDI_network.md"
+        },
+        {
+            "Reference": "concentration-time-profiles",
+            "Title": "Concentration-Time Profiles",
+            "Content": "Content/Intro_evaluation_CTprofiles.md",
+            "Sections": [
+                {
+                    "Reference": "Probenecid-Furosemide-DDI-timeprofile",
+                    "Title": "Probenecid-Furosemide DDI"
+                }
+            ]
+        },
+        {
+            "Reference": "references",
+            "Title": "References",
+            "Content": "Content/References.md"
+        },
+        {
+            "Reference": "appendix",
+            "Title": "Appendix",
+            "Sections": [
+                {
+                    "Reference": "osp-introduction",
+                    "Title": "Open Systems Pharmacology Suite (OSPS) Introduction",
+                     "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/OSPS_Introduction.md"
+                },
+                {
+                    "Reference": "mathematical-implementation-of-ddi",
+                    "Title": "Mathematical Implementation of Drug-Drug Interactions",
+                     "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/Mathematical_Implementation_of_DDI.md"
+                },
+                {
+                    "Reference": "automatic-requalification-workflow",
+                    "Title": "Automatic (re)-qualification workflow",
+                    "Content": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Qualification-text-modules/v1.3/Qualification_Workflow.md"
+                }
+            ]
+        }
+    ],
+    "Intro": [
+        {
+            "Path": "Content/titlepage.md"
+          }
+    ]
+}
